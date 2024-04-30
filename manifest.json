@@ -1,0 +1,16 @@
+{
+    "manifest_version": 3,
+    "name": "Malware Analyzer",
+    "version": "3.4",
+    "description": "A Chrome extension to analyze file type and size. Capstone Project Developed by Ankan, Aayush and Bharti",
+    "action": {
+      "default_popup": "popup.html",
+      "default_icon": {
+        "16": "icon.png",
+        "48": "icon.png",
+        "128": "icon.png"
+      }
+    },
+    "permissions": ["activeTab"]
+  }
+  

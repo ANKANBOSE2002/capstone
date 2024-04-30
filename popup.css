@@ -1,0 +1,60 @@
+body {
+  font-family: 'Courier New', Courier, monospace;
+  background-color: #000;
+  color: #00ff00;
+  margin: 0;
+  padding: 0;
+}
+
+.container {
+  max-width: 400px;
+  margin: 20px auto;
+  padding: 20px;
+  background-color: #111;
+  border-radius: 8px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.4);
+}
+
+.container.malware-detected {
+  background-color: #ff0000; /* Change background color to red */
+}
+
+h1 {
+  text-align: center;
+  color: #00ff00;
+}
+
+input[type="file"] {
+  display: block;
+  margin: 20px auto;
+  padding: 10px 20px;
+  background-color: #333;
+  border: 2px solid #00ff00;
+  border-radius: 6px;
+  color: #00ff00;
+  cursor: pointer;
+  font-size: 16px;
+  transition: background-color 0.3s, border-color 0.3s, color 0.3s;
+}
+
+input[type="file"]:hover {
+  background-color: #444;
+}
+
+input[type="file"]:focus {
+  outline: none;
+}
+
+.input-file-label {
+  display: block;
+  text-align: center;
+  cursor: pointer;
+}
+
+.input-file-label::after {
+  content: 'Upload File';
+}
+
+.input-file::-webkit-file-upload-button {
+  visibility: hidden;
+}
